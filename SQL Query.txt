@@ -1,0 +1,14 @@
+create database empcase;
+use empcase;
+
+create table employee (Employee_Id integer primary key AUTO_INCREMENT, Employee_Name varchar(10) ,
+Employee_Address varchar(20),Date_of_Joining date, Experience integer, Date_of_Birth date);
+
+insert into employee(Employee_Name, Employee_Address, Date_of_Joining, Experience, Date_of_Birth) values 
+( 'Varsha','Tumkur','2020-09-04',1,'1997-07-02');
+
+select * from employee;
+
+DELETE FROM employee WHERE Employee_Id=3;
+
+drop table employee;
